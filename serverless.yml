@@ -1,0 +1,18 @@
+service:
+  name: trainmate
+  publish: false # Do not publish updates to serverless.com, it's none of their business
+
+provider:
+  name: aws
+  runtime: nodejs8.10
+  region: ap-southeast-2
+
+functions:
+  api:
+    handler: api.handler
+    events:
+      - http:
+          path: /
+          method: get
+  ingest:
+    handler: ingest.handler

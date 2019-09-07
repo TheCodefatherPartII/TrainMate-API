@@ -1,0 +1,14 @@
+{
+  "name": "trainmate",
+  "private": true,
+  "version": "1.0.0",
+  "main": "handler.js",
+  "scripts": {
+    "api": "serverless invoke local -f api -s dev --log --aws-profile terem",
+    "ingest": "serverless invoke local -f ingest -s dev --log --aws-profile terem",
+    "deploy": "serverless deploy -s prod --aws-profile terem"
+  },
+  "dependencies": {
+    "axios": "^0.19.0"
+  }
+}

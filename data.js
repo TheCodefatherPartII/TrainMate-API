@@ -3,10 +3,10 @@ const axios = require('axios');
 module.exports = async () => {
   const dataUrl = "https://anytrip.com.au/api/v3/region/au2/vehicles";
   const params = {
-    maxLat: -33.50798440456585,
-    maxLon: 151.88024658203125,
-    minLat: -34.14613482031263,
-    minLon: 150.0858483886719,
+    maxLat: -32.82746157127569,
+    maxLon: 153.0008520507813,
+    minLat: -34.47735382577876,
+    minLon: 149.79471069335943,
     otrFilter: 300,
     speedFilter: 15,
     feeds: ["au2:st"].join(",") // Syndey trains: "au2:st", NSW trains: "au2:nt"

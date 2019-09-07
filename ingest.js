@@ -1,5 +1,4 @@
-const fs = require('fs');
 
-module.exports.handler = () => {
-
+module.exports.handler = async () => {
+  console.log(trips);
 };

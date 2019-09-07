@@ -1,235 +1,235 @@
 {
+  "tripInstance": {
+    "trip": {
+      "id": "au2:st:614K.442.125.130.T.8.58035634",
+      "headsign": {
+        "headline": "Empty Train",
+        "subtitle": null
+      },
+      "shortName": "614K",
+      "directionId": 1,
+      "shapeId": "au2:md:2-T4-sj2-4.8.R",
+      "wheelchair": null,
+      "routeDirection": null,
+      "route": {
+        "id": "au2:st:ESI_2d",
+        "name": "T4",
+        "longName": "Cronulla to Bondi Junction",
+        "description": "T4 Eastern Suburbs & Illawarra Line",
+        "color": "005AA3",
+        "textColor": "FFFFFF",
+        "routeGroupId": "au2:sydneytrains:T4",
+        "type": 2,
+        "mode": "au2:sydneytrains",
+        "agency": {
+          "id": "au2:st:SydneyTrains",
+          "name": "Sydney Trains",
+          "url": "http://www.sydneytrains.info/",
+          "phone": "131500",
+          "timezone": "Australia/Sydney",
+          "_path": "agency/au2:st:SydneyTrains"
+        },
+        "_path": "route/au2:st:ESI_2d"
+      },
+      "serviceDates": ["20190907", "20190908"],
+      "tripContinues": false,
+      "patternIndex": 272992,
+      "scheduledVehicleProperties": {
+        "run_id": "614K",
+        "set": "T",
+        "cars": "8",
+        "aircon": true,
+        "setDisplayName": "Tangara",
+        "runNo": "614K"
+      },
+      "_path": "trip/au2:st:614K.442.125.130.T.8.58035634"
+    },
+    "startDate": "20190907",
+    "instanceNumber": 0,
+    "realtimeState": null,
+    "realtimeStatus": 1,
+    "routeVariantKey": "30948_17012653",
+    "tripContinues": false,
+    "shapeId": "au2:md:2-T4-sj2-4.8.R",
+    "time": 1567838116,
+    "current": true,
+    "_path": "tripInstance/20190907/au2:st:614K/0"
+  },
   "vehicleInstance": {
-    "surroundingStops": {
-      "prev": {
-        "stop": {
-          "id": "au2:2232281",
-          "code": "2232281",
-          "modes": ["au2:sydneytrains"],
-          "locality": "Loftus",
-          "name": {
-            "station_name": "Loftus",
-            "platform_readable_name": "Platform 1",
-            "station_readable_name": "Loftus Station",
-            "platform_name": "1",
-            "platform_type": "Platform"
-          },
-          "disassembled": {
-            "fullName": "Loftus Station, Platform 1",
-            "stationName": "Loftus",
-            "platformCombinedName": "Platform 1",
-            "platformTypeAbbreviation": "Plt",
-            "platformType": "Platform",
-            "platformName": "1"
-          },
-          "fullName": "Loftus Station, Platform 1",
-          "coordinates": {
-            "lat": -34.04517,
-            "lon": 151.05123
-          },
-          "wheelchair": false,
-          "timezone": "Australia/Sydney",
-          "parent": {
-            "id": "au2:223220",
-            "code": "223220",
-            "modes": ["au2:sydneytrains", "au2:buses", "au2:schoolbuses"],
-            "locality": "Loftus",
-            "name": {
-              "station_name": "Loftus Station",
-              "platform_readable_name": "Loftus Station",
-              "station_readable_name": "Loftus Station"
-            },
-            "disassembled": {
-              "fullName": "Loftus Station",
-              "stationName": "Loftus Station",
-              "platformCombinedName": null,
-              "platformType": null,
-              "platformName": null
-            },
-            "fullName": "Loftus Station",
-            "coordinates": {
-              "lat": -34.04514,
-              "lon": 151.05132
-            },
-            "wheelchair": null,
-            "timezone": "Australia/Sydney",
-            "_path": "stop/au2:223220"
-          },
-          "_path": "stop/au2:2232281"
-        },
-        "stopHeadsign": {
-          "headline": "Bondi Junction",
-          "subtitle": null
-        },
-        "stopSequence": 92,
-        "index": 31,
-        "ts": 1567834848,
-        "arrival": {
-          "time": 1567834860,
-          "delay": 0
-        },
-        "departure": {
-          "time": 1567834860,
-          "delay": 0
-        },
-        "pickUp": 1,
-        "dropOff": 1,
-        "timepoint": 0,
-        "shapeDistance": 93090,
-        "_path": "stopTime/20190907/au2:st:452D/0/92"
+    "id": "9681.5186.3348.3478.1407.7163.6058.4953",
+    "reportedTripId": "au2:st:614K.442.125.130.T.8.58035634",
+    "lastPosition": {
+      "time": 1567837809,
+      "bearing": 348,
+      "speed": null,
+      "locationId": "Sutherland.Cronulla 2 Loc",
+      "status": 4,
+      "distance": 0,
+      "vdap": 0,
+      "statusString": "at Cronulla Station, Platform 2",
+      "coordinates": {
+        "lat": -34.05595,
+        "lon": 151.15146
       },
-      "at": {
-        "stop": {
-          "id": "au2:2232291",
-          "code": "2232291",
-          "modes": ["au2:sydneytrains"],
-          "locality": "Sutherland",
-          "name": {
-            "station_name": "Sutherland",
-            "platform_readable_name": "Platform 1",
-            "station_readable_name": "Sutherland Station",
-            "platform_name": "1",
-            "platform_type": "Platform"
-          },
-          "disassembled": {
-            "fullName": "Sutherland Station, Platform 1",
-            "stationName": "Sutherland",
-            "platformCombinedName": "Platform 1",
-            "platformTypeAbbreviation": "Plt",
-            "platformType": "Platform",
-            "platformName": "1"
-          },
-          "fullName": "Sutherland Station, Platform 1",
-          "coordinates": {
-            "lat": -34.03166,
-            "lon": 151.05717
-          },
-          "wheelchair": false,
-          "timezone": "Australia/Sydney",
-          "parent": {
-            "id": "au2:223210",
-            "code": "223210",
-            "modes": ["au2:sydneytrains", "au2:buses", "au2:schoolbuses"],
-            "locality": "Sutherland",
+      "surroundingStops": {
+        "at": {
+          "stop": {
+            "id": "au2:2230212",
+            "code": "2230212",
+            "modes": ["au2:sydneytrains"],
+            "locality": "Cronulla",
             "name": {
-              "station_name": "Sutherland Station",
-              "platform_readable_name": "Sutherland Station",
-              "station_readable_name": "Sutherland Station"
+              "station_name": "Cronulla",
+              "platform_readable_name": "Platform 2",
+              "station_readable_name": "Cronulla Station",
+              "platform_name": "2",
+              "platform_type": "Platform"
             },
             "disassembled": {
-              "fullName": "Sutherland Station",
-              "stationName": "Sutherland Station",
-              "platformCombinedName": null,
-              "platformType": null,
-              "platformName": null
+              "fullName": "Cronulla Station, Platform 2",
+              "stationName": "Cronulla",
+              "platformCombinedName": "Platform 2",
+              "platformTypeAbbreviation": "Plt",
+              "platformType": "Platform",
+              "platformName": "2"
             },
-            "fullName": "Sutherland Station",
+            "fullName": "Cronulla Station, Platform 2",
             "coordinates": {
-              "lat": -34.03179,
-              "lon": 151.05719
+              "lat": -34.05595,
+              "lon": 151.15146
             },
-            "wheelchair": null,
-            "timezone": "Australia/Sydney",
-            "_path": "stop/au2:223210"
+            "wheelchair": false,
+            "parent": {
+              "id": "au2:223020",
+              "code": "223020",
+              "modes": ["au2:sydneytrains", "au2:buses", "au2:schoolbuses", "au2:privateferries"],
+              "locality": "Cronulla",
+              "name": {
+                "station_name": "Cronulla Station",
+                "platform_readable_name": "Cronulla Station",
+                "station_readable_name": "Cronulla Station"
+              },
+              "disassembled": {
+                "fullName": "Cronulla Station",
+                "stationName": "Cronulla Station",
+                "platformCombinedName": null,
+                "platformType": null,
+                "platformName": null
+              },
+              "fullName": "Cronulla Station",
+              "coordinates": {
+                "lat": -34.05625,
+                "lon": 151.15154
+              },
+              "wheelchair": true,
+              "_path": "stop/au2:223020"
+            },
+            "_path": "stop/au2:2230212"
           },
-          "_path": "stop/au2:2232291"
+          "stopHeadsign": {
+            "headline": "Bondi Junction",
+            "subtitle": "via Kogarah"
+          },
+          "stopSequence": 1,
+          "index": 0,
+          "ts": 1567838094,
+          "arrival": {
+            "time": 1567837809,
+            "delay": 248
+          },
+          "departure": {
+            "time": 1567838881,
+            "delay": 0
+          },
+          "pickUp": 0,
+          "dropOff": 1,
+          "timepoint": 0,
+          "firstStop": true,
+          "firstRevenueStop": true,
+          "shapeDistance": 0,
+          "_path": "stopTime/20190907/au2:st:614K/0/1"
         },
-        "stopHeadsign": {
-          "headline": "Bondi Junction",
-          "subtitle": "via Wolli Creek"
-        },
-        "stopSequence": 98,
-        "index": 32,
-        "ts": 1567834898,
-        "arrival": {
-          "time": 1567834896,
-          "delay": -84
-        },
-        "departure": {
-          "time": 1567835040,
-          "delay": 0
-        },
-        "pickUp": 0,
-        "dropOff": 0,
-        "timepoint": 0,
-        "shapeDistance": 94737,
-        "_path": "stopTime/20190907/au2:st:452D/0/98"
+        "next": {
+          "stop": {
+            "id": "au2:2230221",
+            "code": "2230221",
+            "modes": ["au2:sydneytrains"],
+            "locality": "Woolooware",
+            "name": {
+              "station_name": "Woolooware",
+              "platform_readable_name": "Platform 1",
+              "station_readable_name": "Woolooware Station",
+              "platform_name": "1",
+              "platform_type": "Platform"
+            },
+            "disassembled": {
+              "fullName": "Woolooware Station, Platform 1",
+              "stationName": "Woolooware",
+              "platformCombinedName": "Platform 1",
+              "platformTypeAbbreviation": "Plt",
+              "platformType": "Platform",
+              "platformName": "1"
+            },
+            "fullName": "Woolooware Station, Platform 1",
+            "coordinates": {
+              "lat": -34.04765,
+              "lon": 151.1439
+            },
+            "wheelchair": false,
+            "parent": {
+              "id": "au2:223010",
+              "code": "223010",
+              "modes": ["au2:sydneytrains", "au2:buses"],
+              "locality": "Woolooware",
+              "name": {
+                "station_name": "Woolooware Station",
+                "platform_readable_name": "Woolooware Station",
+                "station_readable_name": "Woolooware Station"
+              },
+              "disassembled": {
+                "fullName": "Woolooware Station",
+                "stationName": "Woolooware Station",
+                "platformCombinedName": null,
+                "platformType": null,
+                "platformName": null
+              },
+              "fullName": "Woolooware Station",
+              "coordinates": {
+                "lat": -34.04772,
+                "lon": 151.144
+              },
+              "wheelchair": true,
+              "_path": "stop/au2:223010"
+            },
+            "_path": "stop/au2:2230221"
+          },
+          "stopHeadsign": {
+            "headline": "Bondi Junction",
+            "subtitle": "via Kogarah"
+          },
+          "stopSequence": 5,
+          "index": 1,
+          "ts": 1567838094,
+          "arrival": {
+            "time": 1567839000,
+            "delay": 0
+          },
+          "departure": {
+            "time": 1567839030,
+            "delay": 0
+          },
+          "pickUp": 0,
+          "dropOff": 0,
+          "timepoint": 0,
+          "shapeDistance": 1195,
+          "_path": "stopTime/20190907/au2:st:614K/0/5"
+        }
       },
-      "next": {
-        "stop": {
-          "id": "au2:2226111",
-          "code": "2226111",
-          "modes": ["au2:sydneytrains"],
-          "locality": "Jannali",
-          "name": {
-            "station_name": "Jannali",
-            "platform_readable_name": "Platform 1",
-            "station_readable_name": "Jannali Station",
-            "platform_name": "1",
-            "platform_type": "Platform"
-          },
-          "disassembled": {
-            "fullName": "Jannali Station, Platform 1",
-            "stationName": "Jannali",
-            "platformCombinedName": "Platform 1",
-            "platformTypeAbbreviation": "Plt",
-            "platformType": "Platform",
-            "platformName": "1"
-          },
-          "fullName": "Jannali Station, Platform 1",
-          "coordinates": {
-            "lat": -34.01585,
-            "lon": 151.06448
-          },
-          "wheelchair": false,
-          "parent": {
-            "id": "au2:222620",
-            "code": "222620",
-            "modes": ["au2:sydneytrains", "au2:buses", "au2:schoolbuses"],
-            "locality": "Jannali",
-            "name": {
-              "station_name": "Jannali Station",
-              "platform_readable_name": "Jannali Station",
-              "station_readable_name": "Jannali Station"
-            },
-            "disassembled": {
-              "fullName": "Jannali Station",
-              "stationName": "Jannali Station",
-              "platformCombinedName": null,
-              "platformType": null,
-              "platformName": null
-            },
-            "fullName": "Jannali Station",
-            "coordinates": {
-              "lat": -34.01613,
-              "lon": 151.06466
-            },
-            "wheelchair": null,
-            "_path": "stop/au2:222620"
-          },
-          "_path": "stop/au2:2226111"
-        },
-        "stopHeadsign": {
-          "headline": "Bondi Junction",
-          "subtitle": null
-        },
-        "stopSequence": 103,
-        "index": 33,
-        "ts": 1567834898,
-        "arrival": {
-          "time": 1567835190,
-          "delay": 0
-        },
-        "departure": {
-          "time": 1567835190,
-          "delay": 0
-        },
-        "pickUp": 1,
-        "dropOff": 1,
-        "timepoint": 0,
-        "shapeDistance": 96673,
-        "_path": "stopTime/20190907/au2:st:452D/0/103"
-      }
-    }
+      "linearDelay": 0
+    },
+    "_tripInstancePath": "tripInstance/20190907/au2:st:614K/0",
+    "vehicleModel": "8 car T set",
+    "current": true,
+    "_path": "vehicle/20190907/au2:st:614K/0"
   }
 }

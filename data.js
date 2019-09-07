@@ -14,15 +14,15 @@ module.exports = async () => {
 
   const { data: { response: { vehicles } } } = await axios.get(dataUrl, { params });
 
-  console.log(JSON.stringify(vehicles[0]));
-
   const trips = vehicles
     .map(v => ({
-        id: v.vehicleInstance.id,
+        id: v.tripInstance.trip.id.replace('au2:st:', ''),
         date: v.tripInstance.startDate,
         time: v.tripInstance.time,
         routeName: v.tripInstance.trip.route.longName,
         routeDescription: v.tripInstance.trip.route.description,
+        carriageIDs: v.vehicleInstance.id.split('.'),
+        occupancy: v.vehicleInstance.lastPosition.occupancy,
       })
     );
 

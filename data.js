@@ -1,6 +1,7 @@
+const { Client } = require('pg');
 const axios = require('axios');
 
-module.exports = async () => {
+const apiData = async () => {
   const dataUrl = "https://anytrip.com.au/api/v3/region/au2/vehicles";
   const params = {
     maxLat: -32.82746157127569,
@@ -27,4 +28,23 @@ module.exports = async () => {
     );
 
   return trips;
-}
+};
+
+const dbData = async (tripIds) => {
+  const client = new Client();
+  await client.connect();
+
+  const sql = `
+    SELECT trip_id, stop_name, stop_sequence, arrival_time
+    FROM stop_times
+    LEFT JOIN stops ON stop_times.stop_id = stops.stop_id
+    WHERE trip_id IN('${tripIds.join("','")}')
+    ORDER BY trip_id ASC, stop_sequence ASC`;
+
+  const { _rowCount, rows, _error } = await client.query(sql);
+
+  await client.end();
+  return rows;
+};
+
+module.exports = { apiData, dbData };

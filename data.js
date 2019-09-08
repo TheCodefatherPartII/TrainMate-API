@@ -22,7 +22,7 @@ const apiData = async () => {
         time: v.tripInstance.time,
         routeName: v.tripInstance.trip.route.longName,
         routeDescription: v.tripInstance.trip.route.description,
-        carriageIDs: v.vehicleInstance.id.split('.'),
+        carriageIDs: (v.vehicleInstance.id || '').split('.'),
         occupancy: v.vehicleInstance.lastPosition.occupancy,
       })
     );

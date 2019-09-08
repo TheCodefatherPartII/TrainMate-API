@@ -1,12 +1,12 @@
 const { apiData, dbData } = require('./data');
 
-process.on('unhandledRejection', (up) => { throw up; });
-process.on('uncaughtException', (up) => { throw up; });
-
 module.exports.handler = async (event, context, callback) => {
   const trips = await apiData();
   const tripIds = trips.map(t => t.id);
+  console.log(`Found ${tripIds.length} trips via API`);
+
   const tripStops = await dbData(tripIds);
+  console.log(`Found ${tripStops.length} stops via DB`);
 
   const body = JSON.stringify(
     trips.map((trip) => Object.assign(trip, {
